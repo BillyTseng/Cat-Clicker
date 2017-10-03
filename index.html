@@ -3,9 +3,25 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Cat Clicker</title>
+		<link href="style.css" rel="stylesheet">
 		<script src="script.js" async defer></script>
 	</head>
 	<body>
+		<ul id="namelist"></ul>
 		<div id="showcat"></div>
+		<div id="admin">
+			<button id="adminbtn">admin</button><br><br>
+			<div id="adminform" class="container">
+				<form action="#">
+					<label for="catnameinput">Name:</label>
+					<input type="text" name="inputtext" id="catnameinput"><br>
+					<label for="imgurl">ImgUrl:</label>
+					<input type="text" name="inputtext" id="imgurl"><br>
+					<label for="clickcnt">Click:</label>
+					<input type="text" name="inputtext" id="clickcnt"><br>
+					<input type="button" value="Save" id="save">
+				</form>
+			</div>
+		</div>
 	</body>
 </html>
