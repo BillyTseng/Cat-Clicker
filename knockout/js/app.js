@@ -6,6 +6,16 @@ var ViewModel = function() {
   this.incrementCounter = function() {
     this.clickCount(this.clickCount() + 1);
   };
+
+  this.level = ko.computed(function() {
+    if (this.clickCount() >= 20) {
+      return 'Teen';
+    } else if (this.clickCount() >= 10) {
+      return 'Infant';
+    } else {
+      return 'Newborn';
+    }
+  }, this);
 }
 
 ko.applyBindings(new ViewModel());
