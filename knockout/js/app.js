@@ -16,6 +16,12 @@ var ViewModel = function() {
       return 'Newborn';
     }
   }, this);
+
+  this.nickname = ko.observableArray([
+    { name: 'Bert' },
+    { name: 'Charles' },
+    { name: 'Denise' }
+  ]);
 }
 
 ko.applyBindings(new ViewModel());
